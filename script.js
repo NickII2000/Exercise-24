@@ -70,7 +70,7 @@ const personalMovieDB = {
         for (let i = 1; i < 2; i++) {
             let genres;
             genres = prompt(`Введите Ваши любимые жанры через запятую`); //'         лав стори    ,  комедия, мелодрама,боевик'
-            if (genres != '' && genres != null) {
+            if (genres !== '' && genres != null) {
                 this.genres = genres.toLowerCase().split(',');
                 this.genres = this.genres.map(item => item = item.trim()).sort();
                 console.log('done');
@@ -97,7 +97,7 @@ const personalMovieDB = {
 // personalMovieDB.start();
 // personalMovieDB.rememberMyFilms();
 // personalMovieDB.detectPersonalLevel();
-// personalMovieDB.writeYourGenres();
+personalMovieDB.writeYourGenres();
 
 personalMovieDB.showMyDB();
 personalMovieDB.toggleVisibleMyDB();
