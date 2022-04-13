@@ -99,8 +99,8 @@ const personalMovieDB = {
 // personalMovieDB.detectPersonalLevel();
 // personalMovieDB.writeYourGenres();
 
-// personalMovieDB.showMyDB();
-// personalMovieDB.toggleVisibleMyDB();
-// personalMovieDB.showMyDB();
-// personalMovieDB.toggleVisibleMyDB();
-// personalMovieDB.showMyDB();
+personalMovieDB.showMyDB();
+personalMovieDB.toggleVisibleMyDB();
+personalMovieDB.showMyDB();
+personalMovieDB.toggleVisibleMyDB();
+personalMovieDB.showMyDB();
