@@ -109,3 +109,15 @@ personalMovieDB.showMyDB();
 // ---------------------------------------------------
 const arr = ['zero', 'first', 'second'];
 console.log(arr[1]);
+
+let storeName = 'MD';
+const storeDescription = {
+    budget: 10000,
+    employees: ['Ivan', 'Boris', 'John'],
+    products: {
+        milk: 56,
+        corn: 150,
+    },
+    open: true,
+};
+console.log(storeDescription);
