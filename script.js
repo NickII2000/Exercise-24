@@ -110,6 +110,10 @@ personalMovieDB.showMyDB();
 const arr = ['zero', 'first', 'second'];
 console.log(arr[1]);
 
+let userName = 'John';
+let userNumber = 25;
+userNumber = 24;
+
 let storeName = 'MD';
 const storeDescription = {
     budget: 10000,
