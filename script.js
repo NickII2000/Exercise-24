@@ -105,3 +105,7 @@ personalMovieDB.toggleVisibleMyDB();
 personalMovieDB.showMyDB();
 personalMovieDB.toggleVisibleMyDB();
 personalMovieDB.showMyDB();
+
+// ---------------------------------------------------
+const arr = ['zero', 'first', 'second'];
+console.log(arr[1]);
