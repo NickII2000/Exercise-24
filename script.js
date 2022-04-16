@@ -120,7 +120,7 @@ const storeDescription = {
     employees: ['Ivan', 'Boris', 'John'],
     products: {
         milk: 58,
-        corn: 39,
+        corn: 38,
     },
     open: true,
 };
