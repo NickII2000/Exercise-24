@@ -114,7 +114,7 @@ let userName = 'John';
 let userNumber = 25;
 userNumber = 24;
 
-let storeName = 'MD';
+let storeName = 'McD';
 const storeDescription = {
     budget: 10000,
     employees: ['Ivan', 'Boris', 'John'],
