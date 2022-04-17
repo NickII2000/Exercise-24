@@ -119,7 +119,7 @@ const storeDescription = {
     budget: 10000,
     employees: ['Ivan', 'Boris', 'John'],
     products: {
-        milk: 58,
+        milk: 59,
         corn: 38,
     },
     open: true,
