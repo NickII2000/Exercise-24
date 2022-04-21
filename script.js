@@ -23,7 +23,7 @@ const personalMovieDB = {
     movies: {},
     actors: {},
     genres: [],
-    private: false,
+    private: true,
     start: function () {
         this.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
         while (this.count == '' || this.count == null || isNaN(this.count)) {
