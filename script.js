@@ -73,7 +73,7 @@ const personalMovieDB = {
             //      лав стори    ,  комедия, мелодрама    ,боевик,детский                      
             if (genres !== '' && genres != null) {
                 this.genres = genres.toLowerCase().split(',');
-                this.genres = this.genres.map(item => item = item.trim()).sort();
+                this.genres = this.genres.map(item => item = item.trim().toUpperCase()).sort();
                 console.log('done');
             } else {
                 i--;
