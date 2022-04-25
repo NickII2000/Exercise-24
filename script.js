@@ -69,7 +69,7 @@ const personalMovieDB = {
         // }
         for (let i = 1; i < 2; i++) {
             let genres;
-            genres = prompt(`Введите Ваши любимые жанры через запятую`);
+            genres = prompt(`Введите Ваши любимые жанры через запятую`).trim();
             //      лав стори    ,  комедия, мелодрама    ,боевик,детский
             if (genres !== '' && genres != null) {
                 this.genres = genres.toLowerCase().split(',');
