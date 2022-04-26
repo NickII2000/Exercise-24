@@ -201,7 +201,7 @@ const family = ['Peter', 'Ann', 'Alex', 'Linda'];
 
 function showFamily(family) {
     let str;
-    if (family.letgth === 0) {
+    if (family.length === 0) {
         str = 'Семья пуста';
     } else {
         str = 'Семья состоит из: ';
@@ -215,6 +215,10 @@ console.log(showFamily(family));
 
 const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
 
-function standardizeStrings(arr) {
-
+function standardizeStrings(favoriteCities) {
+    let str = '';
+    favoriteCities.forEach(item => str += '\n' + item.toLowerCase());
+    return str;
 }
+
+console.log(standardizeStrings(favoriteCities));
