@@ -107,8 +107,8 @@ personalMovieDB.toggleVisibleMyDB();
 personalMovieDB.showMyDB();
 
 // ---------------------------------------------------
-const arr = ['zero', 'first', 'second'];
-console.log(arr[1]);
+const arr1 = ['zero', 'first', 'second'];
+console.log(arr1[1]);
 
 let userName = 'John';
 let userNumber = 25;
@@ -163,6 +163,14 @@ const personalPlanPeter = {
             php: '10%'
         },
         exp: '1 month'
+    },
+    showAgeAndLangs: function (plan) {
+        const arr = [
+            ...plan.skills.languages
+        ];
+        let str = `Мне ${plan.age} и я владею языками:`;
+        arr.forEach(item => str += ` ${item.toUpperCase()}`);
+        return str;
     }
 };
 
@@ -185,13 +193,4 @@ function showProgrammingLangs(plan) {
 
 console.log(showProgrammingLangs(personalPlanPeter));
 
-function showAgeAndLangs(plan) {
-    const arr = [
-        ...plan.skills.languages
-    ];
-    let str = `Мне ${plan.age} и я владею языками:`;
-    arr.forEach(item => str += ` ${item.toUpperCase()}`);
-    return str;
-}
-
-console.log(showAgeAndLangs(personalPlanPeter));
+console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter));
