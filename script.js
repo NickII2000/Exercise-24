@@ -186,7 +186,12 @@ function showProgrammingLangs(plan) {
 console.log(showProgrammingLangs(personalPlanPeter));
 
 function showAgeAndLangs(plan) {
-
+    const arr = [
+        ...plan.skills.languages
+    ];
+    let str = `Мне ${plan.age} и я владею языками:`;
+    arr.forEach(item => str += ` ${item.toUpperCase()}`);
+    return str;
 }
 
 console.log(showAgeAndLangs(personalPlanPeter));
