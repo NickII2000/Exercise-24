@@ -194,3 +194,27 @@ function showProgrammingLangs(plan) {
 console.log(showProgrammingLangs(personalPlanPeter));
 
 console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter));
+
+// ---------------------------------------------------
+
+const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+
+function showFamily(family) {
+    let str;
+    if (family.letgth === 0) {
+        str = 'Семья пуста';
+    } else {
+        str = 'Семья состоит из: ';
+        family.forEach(item => str += `${item} `);
+    }
+    return str;
+}
+
+console.log(showFamily(family));
+
+
+const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+
+function standardizeStrings(arr) {
+
+}
