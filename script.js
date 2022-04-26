@@ -128,12 +128,12 @@ console.log(storeDescription);
 
 // ---------------------------------------------------
 
-const arr = [0, 1, 2, 3, 5];
+const arr = [0, 11, 2, 13, 5];
 arr.pop();
 arr.push(6);
 arr.shift();
 arr.unshift(-1);
-console.log(arr);
+console.log(arr.sort());
 
 // for (let i = 0; i < arr.length; i++) {
 //     console.log(arr[i]);
