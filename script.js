@@ -149,3 +149,44 @@ arr.forEach((item, i, arr) => console.log(`элемент ${item} с номер�
 const str = 'z, x, y, a, b, c, d';
 const arrString = str.split(', ');
 console.log(arrString.sort().join('-'));
+
+
+// ---------------------------------------------------
+
+const personalPlanPeter = {
+    name: "Peter",
+    age: "29",
+    skills: {
+        languages: ['ru', 'eng'],
+        programmingLangs: {
+            js: '20%',
+            php: '10%'
+        },
+        exp: '1 month'
+    }
+};
+
+function showExperience(plan) {
+    return `${plan.skills.exp}`;
+}
+
+console.log(showExperience(personalPlanPeter));
+
+function showProgrammingLangs(plan) {
+    const obj = {
+        ...plan.skills.programmingLangs
+    };
+    let str = '';
+    for (let key in obj) {
+        str += `Язык ${key} изучен на ${obj[key]}` + '\n';
+    }
+    return str;
+}
+
+console.log(showProgrammingLangs(personalPlanPeter));
+
+function showAgeAndLangs(plan) {
+
+}
+
+console.log(showAgeAndLangs(personalPlanPeter));
