@@ -128,9 +128,9 @@ console.log(storeDescription);
 
 // ---------------------------------------------------
 
-const arr = [0, 1, 2, 3];
+const arr = [0, 1, 2, 3, 5];
 arr.pop();
-arr.push(4);
+arr.push(6);
 console.log(arr);
 
 for (let i = 0; i < arr.length; i++) {
