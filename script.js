@@ -140,6 +140,8 @@ console.log(arr);
 // }
 // console.log(arr.length);
 
-for (let item of arr) {
-    console.log(item);
-}
+// for (let item of arr) {
+//     console.log(item);
+// }
+
+arr.forEach(item => console.log(item));
