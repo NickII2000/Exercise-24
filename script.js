@@ -217,8 +217,14 @@ const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
 
 function standardizeStrings(favoriteCities) {
     let str = '';
-    favoriteCities.forEach(item => str += '\n' + item.toLowerCase());
-    return str;
+    favoriteCities.forEach((item, i, arr) => {
+        if (i < arr.length - 1) {
+            str += item.toLowerCase() + '\n';
+        } else {
+            str += item.toLowerCase();
+        }
+    });
+    console.log(str);
 }
 
-console.log(standardizeStrings(favoriteCities));
+standardizeStrings(favoriteCities);
