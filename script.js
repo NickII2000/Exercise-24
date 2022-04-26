@@ -133,7 +133,7 @@ arr.pop();
 arr.push(6);
 arr.shift();
 arr.unshift(-1);
-console.log(arr.sort());
+console.log(arr.sort((a, b) => a - b));
 
 // for (let i = 0; i < arr.length; i++) {
 //     console.log(arr[i]);
