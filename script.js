@@ -135,7 +135,11 @@ arr.shift();
 arr.unshift(-1);
 console.log(arr);
 
-for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+// console.log(arr.length);
+
+for (let item of arr) {
+    console.log(item);
 }
-console.log(arr.length);
