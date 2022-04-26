@@ -145,3 +145,7 @@ console.log(arr);
 // }
 
 arr.forEach((item, i, arr) => console.log(`элемент ${item} с номером ${i} массива [${arr}]`));
+
+const str = 'z, x, y, a, b, c, d';
+const arrString = str.split(', ');
+console.log(arrString.sort().join('-'));
