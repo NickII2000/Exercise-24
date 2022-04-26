@@ -125,3 +125,9 @@ const storeDescription = {
     open: true,
 };
 console.log(storeDescription);
+
+// ---------------------------------------------------
+
+const arr = [0, 1, 2, 3];
+arr.pop();
+console.log(arr);
