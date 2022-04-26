@@ -130,4 +130,5 @@ console.log(storeDescription);
 
 const arr = [0, 1, 2, 3];
 arr.pop();
+arr.push(4);
 console.log(arr);
