@@ -144,4 +144,4 @@ console.log(arr);
 //     console.log(item);
 // }
 
-arr.forEach(item => console.log(item));
+arr.forEach((item, i, arr) => console.log(`элемент ${item} с номером ${i} массива [${arr}]`));
