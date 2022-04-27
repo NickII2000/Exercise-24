@@ -238,6 +238,7 @@ function reverse(str) {
         return 'Ошибка!';
     }
     return [...str].reverse().join('');
+    // return str.split('').reverse().join('');
 }
 
 console.log(reverse(someString));
