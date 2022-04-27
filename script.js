@@ -233,9 +233,10 @@ standardizeStrings(favoriteCities);
 const someString = 'This is some strange string';
 
 function reverse(str) {
-    let reverseString = '';
-    [...str].reverse().forEach(item => reverseString += item);
-    return reverseString;
+    // let reverseString = '';
+    // [...str].reverse().forEach(item => reverseString += item);
+    // return reverseString;
+    return [...str].reverse().join('');
 }
 
 console.log(reverse(someString));
