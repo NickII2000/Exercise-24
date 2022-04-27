@@ -238,10 +238,6 @@ function reverse(str) {
         return 'Ошибка!';
     }
     return [...str].reverse().join('');
-    // let reverseString = '';
-    // [...str].reverse().forEach(item => reverseString += item);
-    // return reverseString;
-
 }
 
 console.log(reverse(someString));
