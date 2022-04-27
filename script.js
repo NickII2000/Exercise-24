@@ -231,12 +231,17 @@ standardizeStrings(favoriteCities);
 // ---------------------------------------------------
 
 const someString = 'This is some strange string';
+// const someString = 5;
 
 function reverse(str) {
+    if (typeof (str) !== 'string') {
+        return 'Ошибка!';
+    }
+    return [...str].reverse().join('');
     // let reverseString = '';
     // [...str].reverse().forEach(item => reverseString += item);
     // return reverseString;
-    return [...str].reverse().join('');
+
 }
 
 console.log(reverse(someString));
