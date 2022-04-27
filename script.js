@@ -262,4 +262,4 @@ function availableCurr(arr, missingCurr) {
     return str;
 }
 
-console.log(availableCurr([...baseCurrencies, ...additionalCurrencies], 'UAH'));
+// console.log(availableCurr([...baseCurrencies, ...additionalCurrencies], 'UAH'));
