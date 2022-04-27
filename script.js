@@ -227,3 +227,22 @@ function standardizeStrings(favoriteCities) {
 }
 
 standardizeStrings(favoriteCities);
+
+// ---------------------------------------------------
+
+const someString = 'This is some strange string';
+
+function reverse(str) {
+    let reverseString = '';
+    [...str].reverse().forEach(item => reverseString += item);
+    return reverseString;
+}
+
+console.log(reverse(someString));
+
+const baseCurrencies = ['USD', 'EUR'];
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+function availableCurr(arr, missingCurr) {
+
+}
