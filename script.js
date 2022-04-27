@@ -212,7 +212,6 @@ function showFamily(family) {
 
 console.log(showFamily(family));
 
-
 const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
 
 function standardizeStrings(favoriteCities) {
