@@ -230,8 +230,8 @@ standardizeStrings(favoriteCities);
 
 // ---------------------------------------------------
 
-// const someString = 'This is some strange string';
-const someString = 5;
+const someString = 'This is some strange string';
+// const someString = 5;
 
 function reverse(str) {
     if (typeof (str) !== 'string') {
