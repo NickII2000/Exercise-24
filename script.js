@@ -330,14 +330,14 @@ function sortStudentsByGroups(arr) {
         console.log(recQTeams);
 
         if (recQTeams <= qTeams) {
-            if (recArr.length < 3) {
+            if (recArr.length === 2) {
                 recArr.push(sortArr[i]);
-            } else {
-                recQTeams++;
                 teamsArr.push(recArr);
                 // recArr.splice(0, 3);
                 // recArr.length = 0;
                 recArr = [];
+                recQTeams++;
+            } else {
                 recArr.push(sortArr[i]);
             }
         } else {
