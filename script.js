@@ -344,6 +344,7 @@ function sortStudentsByGroups(arr) {
             }
         }
     }
+    teamsArr.push(str);
 
     return teamsArr;
 }
