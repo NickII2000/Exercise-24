@@ -250,7 +250,7 @@ function availableCurr(arr, missingCurr) {
     if (arr.length === 0) {
         return 'Нет доступных валют';
     }
-    let str = 'Доступные валюты:\n'
+    let str = 'Доступные валюты:\n';
     arr.forEach(item => {
         if (item !== missingCurr) {
             str += item + '\n';
@@ -288,9 +288,14 @@ const shoppingMallData = {
 
 function isBudgetEnough(data) {
     let square = 0;
-    data.shops.forEach(item => square += square + item.width * item.length);
+    data.shops.forEach(item => {
+        square += item.width * item.length;
+        console.log(square);
+    });
     console.log(square);
-    if (data.budget >= square * data.height * moneyPer1m3) {
+    console.log(square * data.height * data.moneyPer1m3);
+
+    if (data.budget >= square * data.height * data.moneyPer1m3) {
         return 'Бюджета достаточно';
     } else {
         return 'Бюджета недостаточно';
