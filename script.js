@@ -311,11 +311,14 @@ const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'B
 function sortStudentsByGroups(arr) {
     const sortArr = arr.sort(),
         teamsArr = [],
-        recArr = [],
         qTeams = 3;
-    let recQTeams = 0,
+
+    let recQTeams = 1,
         str = '',
+        recArr = [],
         trigger = true;
+
+    console.log(sortArr);
 
     if (sortArr.length === 3 * qTeams) {
         str = 'Оставшиеся студенты: -';
@@ -324,6 +327,7 @@ function sortStudentsByGroups(arr) {
     }
 
     for (let i = 0; i < sortArr.length; i++) {
+        console.log(recQTeams);
 
         if (recQTeams <= qTeams) {
             if (recArr.length < 3) {
@@ -331,14 +335,16 @@ function sortStudentsByGroups(arr) {
             } else {
                 recQTeams++;
                 teamsArr.push(recArr);
-                recArr.splice(0, 3);
-                // arr.length = 0;        
+                // recArr.splice(0, 3);
+                // recArr.length = 0;
+                recArr = [];
                 recArr.push(sortArr[i]);
             }
         } else {
+            console.log('Работа со строкой');
             if (trigger) {
                 trigger = false;
-                str += sortArr[i];
+                str += `${sortArr[i]}`;
             } else {
                 str += `, ${sortArr[i]}`;
             }
