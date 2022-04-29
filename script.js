@@ -303,3 +303,49 @@ function isBudgetEnough(data) {
 }
 
 console.log(isBudgetEnough(shoppingMallData));
+
+// ---------------------------------------------------
+
+const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+function sortStudentsByGroups(arr) {
+    const sortArr = arr.sort(),
+        teamsArr = [],
+        recArr = [],
+        qTeams = 3;
+    let recQTeams = 0,
+        str = '',
+        trigger = true;
+
+    if (sortArr.length === 3 * qTeams) {
+        str = 'Оставшиеся студенты: -';
+    } else {
+        str = 'Оставшиеся студенты: ';
+    }
+
+    for (let i = 0; i < sortArr.length; i++) {
+
+        if (recQTeams <= qTeams) {
+            if (recArr.length < 3) {
+                recArr.push(sortArr[i]);
+            } else {
+                recQTeams++;
+                teamsArr.push(recArr);
+                recArr.splice(0, 3);
+                // arr.length = 0;        
+                recArr.push(sortArr[i]);
+            }
+        } else {
+            if (trigger) {
+                trigger = false;
+                str += sortArr[i];
+            } else {
+                str += `, ${sortArr[i]}`;
+            }
+        }
+    }
+
+    return teamsArr;
+}
+
+console.log(sortStudentsByGroups(students));
