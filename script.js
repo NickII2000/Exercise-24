@@ -333,8 +333,6 @@ function sortStudentsByGroups(arr) {
             if (recArr.length === 2) {
                 recArr.push(sortArr[i]);
                 teamsArr.push(recArr);
-                // recArr.splice(0, 3);
-                // recArr.length = 0;
                 recArr = [];
                 recQTeams++;
             } else {
