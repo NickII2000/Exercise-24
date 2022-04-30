@@ -381,3 +381,13 @@ function sortStudentsByGroups(arr) {
 }
 
 sortStudentsByGroups(students1);
+
+// ---------------------------------------------------
+
+const students2 = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+function sortStudentsByGroups(arr) {
+
+}
+
+sortStudentsByGroups(students2);
