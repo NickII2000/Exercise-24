@@ -417,3 +417,27 @@ function sortStudentsByGroups(arr) {
 }
 
 console.log(sortStudentsByGroups(students2));
+
+// ---------------------------------------------------
+
+const students3 = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+function sortStudentsByGroups(arr) {
+    const resArr = [],
+        qTeams = 3;
+    let a = [],
+        recQTeams = 1;
+    arr.sort();
+    for (let i = 0; i < arr.length; i++) {
+        a.push(arr[i]);
+        if (a.length === 3 && recQTeams <= qTeams) {
+            recQTeams++;
+            resArr.push(a);
+            a = [];
+        }
+    }
+    resArr.push(`Оставшиеся студенты: ${a.length === 0 ? '-': a.join(', ')}`);
+    return resArr;
+}
+
+console.log(sortStudentsByGroups(students3));
