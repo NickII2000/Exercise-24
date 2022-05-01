@@ -420,7 +420,7 @@ console.log(sortStudentsByGroups(students2));
 
 // ---------------------------------------------------
 
-const students3 = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam', 'Sam', 'Sam', 'Sam', 'Sam', 'Sam'];
+const students3 = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
 
 function sortStudentsByGroups(arr) {
     const resArr = [],
